@@ -10,12 +10,16 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 i <- NULL
+##set the value of the matrix
 set <-function(y){
   x<<-y
   i<<-NULL
 }
+##get the value of the matrix
 get<-function() x
+##set the value of the inverse
 setinverse<-function(inverse) i<<-inverse
+##get the value of the inverse
 getinverse<-function() i
 list(
   set=set,
@@ -36,6 +40,7 @@ list(
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   i<-x$getinverse()
+  ## If cached data is used diaplay message "getting cached data"
   if(!is.null(i)){
     message("getting cached data")
     return(i)
@@ -46,4 +51,4 @@ cacheSolve <- function(x, ...) {
   i
   }
 
-## Thankyou this is second commit for GitHub
+## Thankyou this is third commit for GitHub
