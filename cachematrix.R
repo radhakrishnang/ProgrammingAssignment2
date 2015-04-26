@@ -38,9 +38,9 @@ list(
 
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+## Return a matrix that is the inverse of 'x'
   i<-x$getinverse()
-  ## If cached data is used diaplay message "getting cached data"
+## If cached data is used diaplay message "getting cached data"
   if(!is.null(i)){
     message("getting cached data")
     return(i)
@@ -51,4 +51,4 @@ cacheSolve <- function(x, ...) {
   i
   }
 
-## Thankyou this is third commit for GitHub
+## Thankyou this is fourth commit for GitHub
